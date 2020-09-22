@@ -1,3 +1,4 @@
+// import findIndex from 'findIndex';
 var originalFlavors = ["Banana Nut Fudge",
     "Black Walnut",
     "Burgundy Cherry",
@@ -120,12 +121,17 @@ Hint: You can use .splice() for this
 
 */
 
-function removeFlavorByName(/*code here*/){
+function removeFlavorByName(array, flavor) {
 
-    /*code here*/
+    let index = (array.indexOf(flavor));
+    array.splice(index,1);
+    return array;
 
 }
 
+console.log(removeFlavorByName(originalFlavors, "Black Walnut"))
+
+// console.log(removeFlavorByName(originalFlavors, "Green Mint Stick"));
 
 /* Task 6: With all of these changes going on, we don't want to lose track of the actual, original 31 flavors. Write a function called copy that makes a copy of the array. 
 
