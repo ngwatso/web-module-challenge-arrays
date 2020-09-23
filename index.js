@@ -141,11 +141,17 @@ Your function should accept:
 
 and should return a new array that is identical to the old array. You can name the new array however you'd like. */
 
-function copy(/*code here*/){
 
-    /*code here*/
+function copy(array1, array2) {
+
+let copyOfArray = [...array1];
+
+console.log(copyOfArray);
 
 }
+
+console.log(copy(originalFlavors, array2=[]));
+
 
 /* Task 7: July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. Write a function that checks every item in the array for a given string and returns a new array called filteredArray with just these values. Rather than hardcoding "chocolate" into your function, pass a string as a parameter, and invoke with the argument "chocolate". This way you could also filter for "Vanilla", "Sherbert", etc. when those holidays roll around.
 
@@ -162,12 +168,56 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
 
-function filterByWord(/*code here*/){
 
-    /*code here*/
+// let firstFlav;
+// let lastFlav;
 
-}
+// function filterByWord (array, flavor) {
 
+//        for (let firstFlav in array) {
+//         console.log((array.indexOf(array.includes(flavor)))
+//        }
+//     }
+//         // let firstFlav = array.indexOf(flavor);
+//         // let lastFlav = array.lastIndexOf(flavor);
+//         // for (let lastFlav in array) {
+//         // console.log((array.lastIndexOf(array.includes(flavor)))
+
+    
+
+
+
+
+
+// console.log(filterByWord(originalFlavors, "Chocolate"))
+
+// function filterByWord(array, flavor) {
+
+// for (let index in array) {
+//     console.log(array[index]);
+// }
+// }
+
+// console.log(filterByWord(originalFlavors, "Chocolate"))
+// function filterByWord(array, flavor){
+
+//     return array.includes(flavor);
+
+// }
+//  function findFlavor(array, flavor) {
+
+//     return array.includes(flavor);
+
+//  }
+
+//  function filterByWord() {
+ 
+//     let flavorList = array.map(findFlavor);
+//     console.log(flavorList);
+//  }
+
+// console.log(findFlavor(originalFlavors, "Chocolate"))
+// console.log(filterByWord(originalFlavors, "Chocolate"));
 
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/ 
