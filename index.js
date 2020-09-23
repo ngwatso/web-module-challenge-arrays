@@ -169,55 +169,20 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 hint - you can use the .includes method to help you solve this */
 
 
-// let firstFlav;
-// let lastFlav;
+function filterByWord(array, flavor) {
 
-// function filterByWord (array, flavor) {
-
-//        for (let firstFlav in array) {
-//         console.log((array.indexOf(array.includes(flavor)))
-//        }
-//     }
-//         // let firstFlav = array.indexOf(flavor);
-//         // let lastFlav = array.lastIndexOf(flavor);
-//         // for (let lastFlav in array) {
-//         // console.log((array.lastIndexOf(array.includes(flavor)))
-
-    
+const limitedTimeFlav = [];
+for (let i = 0; i < array.length; i++) {
+    if (array[i].includes(flavor)) {
+        limitedTimeFlav.push(array[i])
+    }
+}
+    return limitedTimeFlav;
+}
 
 
+console.log(filterByWord(originalFlavors, "Chocolate"))
 
-
-
-// console.log(filterByWord(originalFlavors, "Chocolate"))
-
-// function filterByWord(array, flavor) {
-
-// for (let index in array) {
-//     console.log(array[index]);
-// }
-// }
-
-// console.log(filterByWord(originalFlavors, "Chocolate"))
-// function filterByWord(array, flavor){
-
-//     return array.includes(flavor);
-
-// }
-//  function findFlavor(array, flavor) {
-
-//     return array.includes(flavor);
-
-//  }
-
-//  function filterByWord() {
- 
-//     let flavorList = array.map(findFlavor);
-//     console.log(flavorList);
-//  }
-
-// console.log(findFlavor(originalFlavors, "Chocolate"))
-// console.log(filterByWord(originalFlavors, "Chocolate"));
 
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/ 
